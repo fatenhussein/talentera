@@ -1,0 +1,687 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Source+Sans+Pro&display=swap");
+
+/*global styles*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --white--color: #fff;
+  --black--color: #000;
+  --green-color: #009688;
+  --font-fam: sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/*global styles*/
+
+/*nav styles*/
+header {
+  width: 100vw;
+  background-image: url(./assets/desert.jpg);
+  background-size: 100vw 40vh;
+  background-repeat: no-repeat;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.Talentera {
+  height: 35px;
+  width: 100px;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+}
+.Talentera h2 {
+  color: var(--white--color);
+  font-size: 1.3rem;
+  font-family: var(--font-fam);
+  text-align: center;
+  font-weight: 500;
+}
+nav {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--black--color);
+  height: 40px;
+}
+.fa-solid,
+.fas {
+  color: var(--white--color);
+  padding-right: 1rem;
+}
+/*logo styles*/
+.logo {
+  background-color: var(--black--color);
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
+
+  color: var(--white--color);
+}
+
+.logo:hover {
+  background-color: var(--green-color);
+}
+
+.logo a {
+  color: var(--white--color);
+  font-family: var(--font-fam);
+  text-transform: capitalize;
+  font-size: 1rem;
+}
+/*logo styles*/
+
+/*ul styles*/
+.left-nav-side {
+  display: flex;
+}
+.left-nav-side ul {
+  display: flex;
+}
+
+.left-nav-side ul a {
+  font-size: 1rem;
+  text-transform: capitalize;
+
+  background-color: var(--black--color);
+  width: 60px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white--color);
+  font-family: var(--font-fam);
+}
+.left-nav-side a:hover {
+  background-color: var(--green-color);
+}
+/*ul styles*/
+
+/*drop down manu*/
+
+.dropbtn {
+  background-color: var(--black--color);
+  color: var(--white--color);
+  display: inline-flex;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  padding: 0rem 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+}
+#arrow {
+  margin-bottom: 0.5rem;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding: 0rem 0.5rem;
+  width: 100px;
+  height: 40px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#dropdown-content-link {
+  width: 100px;
+  color: var(--black--color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-family: var(--font-fam);
+  color: var(--white--color);
+}
+
+.dropdown-content a:hover {
+  background-color: var(--green-color);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--green-color);
+}
+
+/*drop down manu*/
+
+/*our team */
+
+.our-team {
+  height: 30vh;
+  margin: 5rem 0rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.our-team-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+.our-team-title {
+  text-align: center;
+  font-family: var(--font-fam);
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.our-team-sub-title {
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+}
+.our-team-card-con {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+}
+.our-team-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.our-team-card img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.our-tean-name {
+  text-align: center;
+  font-family: var(--font-fam);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.our-tean-position {
+  text-align: center;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+}
+/*our-work*/
+.our-work {
+  width: 100vw;
+
+  background-color: #333333;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 3rem 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.our-work-text {
+  width: 22vw;
+
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.our-work-title {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 2rem;
+  font-weight: 500;
+  color: var(--white--color);
+  text-transform: capitalize;
+}
+.our-work-text p {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white--color);
+}
+.our-work-card-con {
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 1rem;
+}
+.our-work-card {
+  width: 22vw;
+
+  height: 100%;
+  background-color: var(--white--color);
+  padding-bottom: 1rem;
+}
+.our-work-card img {
+  width: 22vw;
+  height: 50%;
+}
+
+.our-work-card p {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black--color);
+  text-transform: capitalize;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.our-work-card-title {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--black--color);
+  text-transform: capitalize;
+  padding: 0.3rem 0.5rem;
+}
+.our-work-card-sub-title {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--black--color);
+  text-transform: capitalize;
+  padding: 0.3rem 0.5rem;
+}
+/*end of our work styels*/
+/*contact styles*/
+
+.contact-us {
+  width: 100vw;
+
+  padding: 3rem 2rem;
+  display: flex;
+
+  background-color: #f0f0f0;
+}
+/*contact us  info*/
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 40vw;
+}
+
+.contact-us-title {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--black--color);
+  text-decoration: underline;
+  text-decoration-color: var(--green-color);
+  text-underline-offset: 0.5rem;
+  text-decoration-thickness: 6px;
+  margin-bottom: 1rem;
+}
+.contact-us-sub-title {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--black--color);
+}
+.icon-info {
+  display: flex;
+}
+#contact-icon {
+  color: var(--green-color);
+  padding-right: 0;
+}
+.contact-info p {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+}
+/*contact us  info*/
+.contact-form {
+  width: 60vw;
+  height: fit-content;
+  background-color: var(--white--color);
+  box-shadow: 1px 1px 10px rgb(122, 120, 120);
+  padding: 1rem 1rem;
+}
+.label-input-con {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-form label {
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.contact-form input {
+  border: none;
+  border-bottom: 2px solid rgb(216, 214, 214);
+  outline: none;
+}
+.checkBox-con {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.checkBox-con label {
+  margin-bottom: 1rem;
+  text-align: left;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black--color);
+  text-transform: capitalize;
+}
+.checkBox-btn-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-btn {
+  width: 70px;
+  height: 35px;
+  text-align: center;
+  font-family: var(--font-fam);
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white--color);
+  text-transform: capitalize;
+  border: 1px solid black;
+  background-color: #000;
+}
+/*end  of  lcontact us styles*/
+
+/*footer*/
+footer {
+  width: 100vw;
+  background-color: var(--black--color);
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.footer-title {
+  text-align: right;
+  font-family: var(--font-fam);
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--white--color);
+  text-transform: capitalize;
+}
+
+.footer-icons {
+  color: var(--white--color);
+  display: flex;
+  gap: 0.3rem;
+}
+#footer-icon {
+  border: var(--green-color) solid 1px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--green-color);
+}
+.footer-icons a {
+  color: var(--white--color);
+}
+#pulse-Btn {
+  display: block; /* Hidden by default */
+  position: absolute; /* Fixed/sticky position */
+  top: 1170px;
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--green-color); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  font-size: 14px; /* Increase font size */
+  text-align: center;
+  border-radius: 50%;
+}
+#scroll-Btn {
+  display: block; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 150px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: var(--black--color); /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 10px; /* Some padding */
+  font-size: 18px; /* Increase font size */
+  text-align: center;
+}
+#scroll-up {
+  padding: 0.5rem;
+  color: var(--white--color);
+}
+#pulse-icon {
+  padding: 0.5rem;
+  color: var(--white--color);
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    height: 30vh;
+    background-size: 100vw 40vh;
+  }
+  .logo {
+    width: 55px;
+  }
+  .Talentera {
+    height: 30px;
+    width: 80px;
+  }
+  .Talentera h2 {
+    font-size: 1rem;
+  }
+  .logo a {
+    font-size: 0.8rem;
+  }
+  .fa-solid,
+  .fas {
+    color: var(--white--color);
+    padding: 0.4rem;
+  }
+  .left-nav-side ul a {
+    font-size: 0.8rem;
+    width: 45px;
+  }
+
+  .dropbtn {
+    gap: 0rem;
+    width: 80px;
+    font-size: 0.8rem;
+  }
+
+  .dropdown {
+    width: 60px;
+  }
+
+  #dropdown-content-link {
+    width: 80px;
+    font-size: 0.8rem;
+    padding: 10px 16px;
+  }
+  .our-team {
+    height: unset;
+  }
+  .our-team-title {
+    font-size: 1.2rem;
+  }
+  .our-work-card-sub-title {
+    font-size: 1rem;
+  }
+  .our-team-card-con {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 5rem;
+  }
+  .our-team-card img {
+    width: 100px;
+    height: 100px;
+  }
+  .our-tean-name {
+    font-size: 1.2rem;
+  }
+
+  .our-work {
+    margin-top: 8rem;
+    height: unset;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .our-work-card-con {
+    width: unset;
+    height: unset;
+
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 0rem;
+    gap: 5rem;
+  }
+
+  .our-work-title {
+    text-align: center;
+  }
+  .our-work-text p {
+    text-align: center;
+  }
+
+  .our-work-card {
+    width: 60vw;
+    height: 50vh;
+  }
+  .our-work-card img {
+    width: 60vw;
+  }
+  .our-work-text {
+    width: 60vw;
+  }
+  .contact-us {
+    flex-direction: column;
+    gap: 2rem;
+    height: unset;
+  }
+  .contact-info {
+    width: 80vw;
+    height: unset;
+  }
+  .contact-form {
+    width: 80vw;
+  }
+  #pulse-Btn {
+    top: 1400px;
+  }
+}
+@media screen and (max-width: 280px) {
+  .logo {
+    width: 50px;
+  }
+
+  .logo a {
+    font-size: 0.6rem;
+  }
+  .fa-solid,
+  .fas {
+    color: var(--white--color);
+    padding: 0.4rem;
+  }
+  .left-nav-side ul a {
+    font-size: 0.6rem;
+    width: 30px;
+  }
+
+  .dropbtn {
+    gap: 0rem;
+    width: 60px;
+    font-size: 0.6rem;
+  }
+
+  .dropdown {
+    width: 60px;
+  }
+
+  #dropdown-content-link {
+    width: 60px;
+    font-size: 0.6rem;
+    padding: 10px 16px;
+  }
+
+  #arrow {
+    margin-bottom: 0.2rem;
+  }
+  #search {
+    font-size: 0.8rem;
+  }
+  .our-team-card-con {
+    gap: 4rem;
+  }
+
+  .contact-us {
+    flex-direction: column;
+    gap: 5rem;
+    height: unset;
+  }
+  .contact-info {
+    height: unset;
+  }
+  .contact-form {
+    width: 80vw;
+    height: 45vh;
+  }
+  #pulse-Btn {
+    top: 1280px;
+  }
+}
